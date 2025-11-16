@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Streams</h1>
+    <nav>
+      <ul>
+        <li><a href="Streams Index.html">Home</a></li>
+        <li><a href="Streams Browse.html">Browse</a></li>
+        <li><a href="Streams PLaylist.html">Library</a></li
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>All Your Music. One Platform.</h2>
+      <button onclick="playSample()">Play Sample</button>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <p>High-quality curated playlists and exclusive releases.</p>
+      </div>
+      <div class="feature">
+        <p>Personalized recommendations and massive library.</p>
+      </div>
+      <div class="feature">
+        <p>Lossless audio and artist-first content.</p>
+      </div>
+    </section>
+	<section id="authModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="toggleAuth()">&times;</span>
+    <h3>Login or Sign Up</h3>
+    <input type="text" placeholder="Username" id="username" />
+    <input type="password" placeholder="Password" id="password" />
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Sign Up</button>
+  </div>
+</section>
+
+<section id="dashboard" class="hidden">
+  <h3 id="welcomeMsg"></h3>
+  <button onclick="logout()">Logout</button>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Streams. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
